@@ -1,2 +1,2 @@
 # JavaJSP
-Ejemplos hechos en el taller de JSP
+*Ejemplos y Documentación de consulta de los temas vistos en el taller de JSP.
