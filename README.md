@@ -1,5 +1,11 @@
 # Conexión a base de datos MySQL usando la Libreria JSTL
 
+### Requisitos
+* [MySQL](https://dev.mysql.com/downloads/installer/)
+* [JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+* [Netbeans EE](https://netbeans.org/features/java-on-server/java-ee.html)
+
+
 ### Para realizar cualquier conexión a base de dato MySQL desde netBeans
 
 * Libreria JDBC
@@ -241,5 +247,7 @@ se realiza un foreach mediante para poder imprimir cada uno de los resultados en
 > [Link Aqui.](https://github.com/forcesk/JavaJSP/tree/master/Documentos%20de%20consulta)
 
 ### Links de interés
-> [Link al Repositorio con todos los ejemplos](https://forcesk.github.io/testing/test2)
+> [Link al Repositorio con todos los ejemplos](https://github.com/forcesk/JavaJSP)
+
+> Esta Pagina se encuentra en construcción...
 
