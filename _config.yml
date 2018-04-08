@@ -1,1 +1,14 @@
 theme: jekyll-theme-cayman
+
+title: Taller de JSP
+tagline: JSTL
+name: JSTL -> DB
+description: Ejemplos y Documentación de consulta de los temas vistos en el taller de JSP.
+show_downloads: false
+
+author: 
+  name: Emmanuel Castillo 
+
+footer-links:
+  email: Emm.castillog@gmail.com
+ 
