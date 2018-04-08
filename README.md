@@ -1,5 +1,3 @@
-# Ejemplos y Documentación de consulta de los temas vistos en el taller de JSP.
-
 # Conexión a base de datos MySQL usando la Libreria JSTL
 
 ### Para realizar cualquier conexión a base de dato MySQL desde netBeans
