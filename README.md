@@ -227,7 +227,7 @@ se realiza un foreach mediante para poder imprimir cada uno de los resultados en
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <sql:setDataSource var="dbsource" driver="com.mysql.jdbc.Driver"
                            url="jdbc:mysql://localhost/sakila"
-                           user="root"  password="12345a"/>
+                           user="root"  password="****"/>
     </head>
     <body>
         <sql:update dataSource="${dbsource}" var="result">
@@ -252,5 +252,5 @@ se realiza un foreach mediante para poder imprimir cada uno de los resultados en
 
 
 
-###### Esta Pagina se encuentra en construcción...
+##### Esta Pagina se encuentra en construcción...
 
