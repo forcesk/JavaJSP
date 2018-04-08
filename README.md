@@ -143,7 +143,68 @@ se realiza un foreach mediante para poder imprimir cada uno de los resultados en
 ```
 > En este caso la variable "row" se encuentra cargada con los resultados del query.
 
+## Realizar un Insert into en la DB
+
+### En este caso el la inserción se realiza en dos pasos, el primero es pedir los datos a ingresar.
+### El segundo es mandar los datos para que sean ingresados a la base de datos.
+
+```jsp
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<!DOCTYPE html>
 
 
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+       
+         <form action="[JSP-Destino].jsp" method="post">
+            <table border="0" cellspacing="2" cellpadding="5">
+                <thead>
+                    <tr>
+                        <caption>Introduce de los datos del actor</caption>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                
+                    <tr>
+                        <th><label>ID</label></th>
+                        <th><label>Nombre</label></th>
+                        <th><label>Apellido</label></th>
+                        <th><label>Fecha</label></th>     
+                    </tr>
+                    
+                    <tr>
+                        <td><input type="text" name="idActor"/></td>
+                        <td><input type="text" name="NombreAc"/></td>
+                        <td><input type="text" name="ApellidoAc"/></td>
+                        <td><input type="text" name="Fecha"/></td>
+                       </tr>
+                       
+                     <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input type="submit" value="Enviar" class="icon-export myButton myButton-hover myButtonactive"/></td>
+                        <td><input type="reset" value="Borrar" class="icon-trash myButton myButton-hover myButton-active"/></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+            
+                </tbody>
+            </table>
+        </form>
+        
+    </body>
+</html>
+
+```
+> Notar que en el Form-Action Se debe reemplazar "JSP-Destino" con el nombre del JSP al que se desea enviar los datos ingresados
 [Link al Repositorio con todos los ejemplos](https://forcesk.github.io/testing/test2)
 
