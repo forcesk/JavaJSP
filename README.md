@@ -145,8 +145,9 @@ se realiza un foreach mediante para poder imprimir cada uno de los resultados en
 
 ## Realizar un Insert into en la DB
 
-### En este caso el la inserción se realiza en dos pasos, el primero es pedir los datos a ingresar.
-### El segundo es mandar los datos para que sean ingresados a la base de datos.
+#### En este caso el la inserción se realiza en dos pasos, el primero es pedir los datos a ingresar, el segundo es mandar los datos para que sean ingresados a la base de datos.
+
+##### *Captura de datos*
 
 ```jsp
 
@@ -205,6 +206,40 @@ se realiza un foreach mediante para poder imprimir cada uno de los resultados en
 </html>
 
 ```
-> Notar que en el Form-Action Se debe reemplazar "JSP-Destino" con el nombre del JSP al que se desea enviar los datos ingresados
-[Link al Repositorio con todos los ejemplos](https://forcesk.github.io/testing/test2)
+> Notar que en el Form-Action Se debe reemplazar "JSP-Destino" con el nombre del JSP al que se desea enviar los datos ingresados.
+
+
+### El segundo paso, ingresar los datos recibidos a la base de datos
+```jsp
+@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <sql:setDataSource var="dbsource" driver="com.mysql.jdbc.Driver"
+                           url="jdbc:mysql://localhost/sakila"
+                           user="root"  password="12345a"/>
+    </head>
+    <body>
+        <sql:update dataSource="${dbsource}" var="result">
+            INSERT INTO actor(actor_id, first_name, last_name, last_update) VALUES (?,?,?,?);
+            <sql:param value="${param.idActor}" />
+            <sql:param value="${param.NombreAc}" />
+            <sql:param value="${param.ApellidoAc}" />
+            <sql:param value="${param.Fecha}" />
+        </sql:update>
+            
+            <h2>Datos Agregados!</h2>
+            <a href="index.jsp">Regresar</a>
+    </body>
+</html>
+```
+### Documentos
+> [Link Aqui.](https://github.com/forcesk/JavaJSP/tree/master/Documentos%20de%20consulta)
+
+### Links de interés
+> [Link al Repositorio con todos los ejemplos](https://forcesk.github.io/testing/test2)
 
