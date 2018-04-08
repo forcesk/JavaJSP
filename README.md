@@ -77,8 +77,8 @@ url="jdbc:mysql://localhost:3306/[Nombre-Base-de-Datos]" user="[usuario]" passwo
 
 ```
 En este caso la base de datos empleadas es "Sakila" la cuál viene por defecto instalado en la mayoria 
-de los servidores de MySQL.  
-[Documentación: Sakila](https://dev.mysql.com/doc/sakila/en/)
+de los servidores de MySQL  
+[Documentación: Sakila](https://dev.mysql.com/doc/sakila/en/).
 Si por alguna razón no la tienes instalada la puedes descargar [aquí](https://dev.mysql.com/doc/index-other.html) .
 
 
@@ -89,7 +89,7 @@ Si por alguna razón no la tienes instalada la puedes descargar [aquí](https://
 ## Consulta Sencilla
 
 Para realizar una consulta sencilla se utiliza la misma etiqueta "Sql:Query", pero despues de realizar la consulta
-se realiza un foreach mediante para poder imprimir cada uno de los resultados en el navegador.
+se realiza un "foreach" mediante el cual se puede imprimir cada uno de los resultados en el navegador.
 [Link del Codigo](https://github.com/forcesk/JavaJSP/blob/master/QuerySakila.jsp)
 
 
